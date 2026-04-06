@@ -1,0 +1,32 @@
+.nav_hamburger {
+  display: none;
+}
+
+.nav_links {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+}
+
+.nav_links a {
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.nav_links a:hover {
+  color: var(--primary-color);
+}
+
+.hero-section {
+  gap: 64px;
+}
+
+
+ .collection-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.about-content {
+  max-width: 600px;
+  margin: 0 auto; 
+}

@@ -1,0 +1,25 @@
+
+body {
+  padding: 0 32px;
+}
+
+
+.hero-section {
+  flex-direction: row; 
+  align-items: center;
+  text-align: left;
+  gap: 48px;
+}
+
+.hero-visual, .hero-copy {
+  flex: 1; 
+}
+
+.badge {
+  margin-bottom: 24px;
+}
+
+
+.collection-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
