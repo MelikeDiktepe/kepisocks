@@ -1,4 +1,19 @@
+@media all and (min-width: 768px) {
+  /* Masaüstünde butonu gizle */
+  .nav_hamburger, #menu-toggle {
+    display: none !important;
+  }
 
+  /* Menüyü yan yana getir ve her zaman göster */
+  .nav_links {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    padding: 0;
+    box-shadow: none;
+    width: auto;
+  }
+}
 body {
   padding: 0 32px;
 }
