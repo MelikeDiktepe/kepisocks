@@ -1,10 +1,8 @@
 @media all and (min-width: 768px) {
-  /* Masaüstünde butonu gizle */
   .nav_hamburger, #menu-toggle {
     display: none !important;
   }
 
-  /* Menüyü yan yana getir ve her zaman göster */
   .nav_links {
     display: flex !important;
     flex-direction: row;
