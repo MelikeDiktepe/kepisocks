@@ -1,16 +1,15 @@
-
 :root {
-  --primary-color: #FF6B35; 
-  --primary-hover: #E85A28;
-  --text-dark: #2D3142;
-  --text-light: #5F5F7D;
-  --bg-color: #FAFAFA;
-  --card-bg: #FFFFFF;
-  --badge-color:#FFF0EB;
+  --primary-color: #ff6b35;
+  --primary-hover: #e85a28;
+  --text-dark: #2d3142;
+  --text-light: #5f5f7d;
+  --bg-color: #fafafa;
+  --card-bg: #ffffff;
+  --badge-color: #fff0eb;
   --footer-color: #eee;
-  --whatsapp-green: #25D366;
+  --whatsapp-green:#49C358;
+  --trendyol-orange:#F76520;
 }
-
 
 * {
   box-sizing: border-box;
@@ -23,11 +22,11 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', system-ui, sans-serif;
+  font-family: "Segoe UI", system-ui, sans-serif;
   color: var(--text-dark);
   background-color: var(--bg-color);
   line-height: 1.6;
-  padding: 0 16px; 
+  padding: 0 16px;
   overflow-x: hidden;
 }
 
@@ -47,7 +46,6 @@ a {
   max-width: 1200px;
   width: 100%;
 }
-
 
 .btn {
   display: inline-flex;
@@ -72,34 +70,35 @@ a {
   transform: translateY(-2px);
 }
 
-
 .action-buttons {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 12px;
   justify-content: center;
   margin-top: 24px;
 }
 
-
 .btn-whatsapp {
   background-color: var(--whatsapp-green);
   color: var(--card-bg);
-  margin-top: 0; 
+  margin-top: 0;
 }
 
 .btn-trendyol {
-  background-color: #F27A1A; 
+  background-color: var(--trendyol-orange);
   color: var(--card-bg);
 }
 
 .btn-instagram {
-  background-color: #E1306C; 
+  /* background-color: #e1306c;
+  color: var(--card-bg); */
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: var(--card-bg);
-}
+} 
 
-
-.btn-whatsapp:hover, .btn-trendyol:hover, .btn-instagram:hover {
+.btn-whatsapp:hover,
+.btn-trendyol:hover,
+.btn-instagram:hover {
   filter: brightness(1.1);
   transform: translateY(-2px);
   color: var(--card-bg);
@@ -137,7 +136,7 @@ nav {
 }
 
 .nav_links {
-  display: none; 
+  display: none;
   flex-direction: column;
   list-style: none;
   position: absolute;
@@ -149,14 +148,14 @@ nav {
   padding: 20px;
   border-radius: 14px;
   z-index: 1000;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: left;
-  background-color:var(--bg-color) ;
+  background-color: var(--bg-color);
 }
 .nav_links a {
-font-weight: 600;
-font-size: 0.9rem;
-transition: color 0.5s;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: color 0.5s;
 }
 .nav_links a:hover {
   color: var(--primary-color);
@@ -168,11 +167,11 @@ transition: color 0.5s;
 
 .hero-section {
   display: flex;
-  flex-direction: column-reverse; 
+  flex-direction: column-reverse;
   gap: 32px;
   padding: 40px 0;
   text-align: center;
-  min-height: calc(100dvh - 92px); 
+  min-height: calc(100dvh - 92px);
   justify-content: center;
 }
 
@@ -188,8 +187,7 @@ transition: color 0.5s;
 }
 
 .hero-copy h1 {
- 
-  font-size: clamp(2.5rem, 8vw, 4rem); 
+  font-size: clamp(2.5rem, 8vw, 4rem);
   line-height: 1.1;
   margin-bottom: 16px;
 }
@@ -208,20 +206,21 @@ transition: color 0.5s;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.078);
 }
 
-
-.collections-section, .about-section {
+.collections-section,
+.about-section {
   padding: 64px 0;
   text-align: center;
 }
 
-.collections-section h2, .about-section h2 {
+.collections-section h2,
+.about-section h2 {
   font-size: 2rem;
   margin-bottom: 32px;
 }
 
 .collection-grid {
   display: grid;
-  grid-template-columns: 1fr; 
+  grid-template-columns: 1fr;
   gap: 24px;
 }
 
@@ -229,7 +228,7 @@ transition: color 0.5s;
   background-color: var(--card-bg);
   padding: 16px;
   border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
 }
 
@@ -241,7 +240,7 @@ transition: color 0.5s;
   border-radius: 12px;
   margin-bottom: 16px;
   width: 100%;
-  aspect-ratio: 1 / 1; 
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
@@ -252,7 +251,7 @@ footer {
   border-top: 1px solid var(--footer-color);
 }
 
-.contact-info h3 {
+.contact-info h2 {
   color: var(--primary-color);
   margin-bottom: 8px;
 }
