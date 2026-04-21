@@ -4,6 +4,7 @@
 
 .nav_links {
     display: flex !important; 
+    gap: 100px;
     position: static;
     box-shadow: none;
     padding: 0;

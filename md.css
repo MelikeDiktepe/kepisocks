@@ -1,7 +1,8 @@
 @media all and (min-width: 768px) {
-  .nav_hamburger, #menu-toggle {
+ .nav_hamburger, #menu-toggle {
     display: none !important;
   }
+}
 
   .nav_links {
     display: flex !important;
@@ -11,7 +12,14 @@
     box-shadow: none;
     width: auto;
   }
+  .nav_logo, .search-btn, .nav_hamburger {
+  order: initial; 
 }
+
+.search-btn {
+  margin: 0; 
+}
+
 body {
   padding: 0 32px;
 }

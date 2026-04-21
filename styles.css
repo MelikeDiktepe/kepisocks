@@ -90,8 +90,6 @@ a {
 }
 
 .btn-instagram {
-  /* background-color: #e1306c;
-  color: var(--card-bg); */
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: var(--card-bg);
 } 
@@ -118,15 +116,14 @@ nav {
 }
 
 .nav_logo strong {
+  order: 1; 
   font-size: 1.8rem;
   color: var(--primary-color);
   letter-spacing: -1px;
 }
-.menu-toggle {
-  display: none;
-}
 
 .nav_hamburger {
+  order: 3;
   display: block;
   background: none;
   border: none;
@@ -153,7 +150,7 @@ nav {
   background-color: var(--bg-color);
 }
 .nav_links a {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.9rem;
   transition: color 0.5s;
 }
@@ -163,6 +160,30 @@ nav {
 
 .menu-toggle:checked ~ .nav_links {
   display: flex;
+}
+.search-btn {
+  order: 2;
+  margin: 0 auto;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: var(--text-light); 
+    transition: all 0.3s ease;
+}
+
+.search-btn .material-symbols-outlined {
+    font-size: 20px; 
+    font-variation-settings: 'wght' 300;
+}
+
+.search-btn:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+.menu-toggle {
+  display: none;
 }
 
 .hero-section {
