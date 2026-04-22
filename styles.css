@@ -149,6 +149,7 @@ nav {
   text-align: left;
   background-color: var(--bg-color);
 }
+
 .nav_links a {
   font-weight: 700;
   font-size: 0.9rem;
